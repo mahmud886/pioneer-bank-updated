@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer Banks</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    
+</head>
+<body class="p-5" onload="onloadFunction()">
+
+
+    <!-- <p id="demo" class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, sunt.</p> -->
+    <!-- <button id="btn" class="btn btn-primary">Click Me</button> -->
+    
+    <!-- Login Area Start -->
+    <div id="login-area" class="container">
+        <h1 id="demo2" class="text-center">Welcome to Pioneer Account</h1>
+        <div class="submit-area shadow-lg p-5">
+            <h4>Login</h4>
+            <input class="form-control" type="text" name="" id="" placeholder="Write Your Email"> <br>
+            <input class="form-control" type="password" name="" id="" placeholder="Write Your Password"> <br>
+            <button id="btn" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+    <!-- Login Area End -->
+    <!-- Transaction Area Start -->
+    <div id="transaction-area" class="d-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="deposit bg-success m-2 p-3 rounded-3 text-light">
+                        <h5>Deposit</h5>
+                        <h2>$ <span id="currentDeposit">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="withdraw bg-warning m-2 p-3 rounded-3 text-light">
+                        <h5>Withdraw</h5>
+                        <h2>$ <span id="currentWithdraw">00</span></h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="balance bg-danger m-2 p-3 rounded-3 text-light">
+                        <h5>Balance</h5>
+                        <h2>$ <span id="currentBalance">1240</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-6">
+                    <div class="main-div shadow-lg p-5">
+                        <h4>Deposit</h4>
+                        <input id="depositAmount" class="form-control" type="text" placeholder="$ Amount are you Deposit"> <br>
+                        <button id="addDeposit" class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="main-div shadow-lg p-5">
+                        <h4>Withdraw</h4>
+                        <input id="withdrawAmount" class="form-control" type="text" placeholder="$ Amount are you Withdraw"> <br>
+                        <button id="addWithdraw" class="btn btn-danger">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Transaction Area End -->
+
+
+    <script src="script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
